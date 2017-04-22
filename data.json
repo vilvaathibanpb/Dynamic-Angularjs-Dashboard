@@ -1,0 +1,112 @@
+[
+    {
+        "Sortoption": [
+            {
+                "name": "Fashions",
+                "graphDetails": [
+                    {
+                        "date": "Mar 01 2012 10:00:00 AM",
+                        "count": 1000
+                    },{
+                        "date": "Mar 01 2012 10:00:00 AM",
+                        "count": 2000
+                    },
+                    {
+                        "date": "Mar 11 2012 10:00:00 AM",
+                        "count": 3000
+                    },{
+                        "date": "Mar 02 2012 10:00:00 AM",
+                        "count": 7000
+                    }
+                ]
+            },
+            {
+                "name": "Styles",
+                "graphDetails": [
+                    {
+                        "date": "Mar 05 2012 10:00:00 AM",
+                        "count": 3000
+                    },{
+                        "date": "Mar 03 2012 10:00:00 AM",
+                        "count": 1000
+                    }
+                ]
+            },
+            {
+                "name": "Brands",
+                "graphDetails": [
+                    {
+                        "date": "Apr 05 2012 10:00:00 AM",
+                        "count": 7000
+                    },{
+                        "date": "Apr 03 2012 10:00:00 AM",
+                        "count": 4000
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Sortoption": [
+            {
+                "name": "Fastrack",
+                "graphDetails": [
+                    {
+                        "date": "Jun 05 2012 10:00:00 AM",
+                        "count": 6000
+                    },{
+                        "date": "May 13 2012 10:00:00 AM",
+                        "count": 2000
+                    }
+                ]
+            },
+            {
+                "name": "Electronics",
+                "graphDetails": [
+                    {
+                        "date": "Apr 15 2012 10:00:00 AM",
+                        "count": 500
+                    },{
+                        "date": "Jul 03 2012 10:00:00 AM",
+                        "count": 3000
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Sortoption": [
+            
+            {
+                "name": "Final Heading",
+                "graphDetails": [
+                    {
+                        "date": "Aug 05 2012 10:00:00 AM",
+                        "count": 1000
+                    },{
+                        "date": "Aug 01 2012 10:00:00 AM",
+                        "count": 1000
+                    },{
+                        "date": "Mar 01 2012 10:00:00 AM",
+                        "count": 3000
+                    },{
+                        "date": "Mar 01 2012 10:00:00 AM",
+                        "count": 5000
+                    }
+                ]
+            },
+            {
+                "name": "Sub Heading",
+                "graphDetails": [
+                    {
+                        "date": "Sep 15 2012 10:00:00 AM",
+                        "count": 6000
+                    },{
+                        "date": "Nov 03 2012 10:00:00 AM",
+                        "count": 1000
+                    }
+                ]
+            }
+        ]
+    }
+]

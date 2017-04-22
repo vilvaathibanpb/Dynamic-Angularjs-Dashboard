@@ -1,0 +1,322 @@
+
+    #header_nav{
+        margin-bottom:0px;
+        border-bottom: 0px;
+    }
+    .days{
+        width:150px;
+    }
+    .Module{
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        padding:5px;
+        padding-top:10px;
+        border:1px solid lightgrey;
+    }
+    .Module > .title{
+        margin-top:10px;
+        padding-left:25px;
+        font-weight: bold;
+    }
+    .indicator{
+        margin-top:8px;
+        height:10px;
+        width: 10px;
+    }
+    .indicatorValue{
+        padding:5px;
+        font-size:12px;
+        font-weight: normal;
+    }
+    .Module > .title > .indicate >{
+        padding:0px;
+    }
+    .Module > .title > div > span > .lineindicator{
+        margin-top:10px;
+        min-height:4px;
+        width: 25px;
+    }
+    #basic-addon1{
+        font-size:12px;
+    }
+    .download{
+        padding:0px;
+    }
+    .paddingtop{
+        padding:0px;
+        padding-top: 5px;
+    }
+    .top{
+        padding-top: 5px;
+    }
+    .navbar > .container{
+        background-color:#3F51B5;
+    }
+    .navbar > .container{
+        margin: 0px;
+        width:100%;
+    }
+    .navbar > .container > .dropdown > button{
+           margin-top:10px;
+           padding:0px;
+           background-color:#3F51B5;
+           border: 0px;
+    }
+    .navbar > .container > .dropdown > button >.profile{
+        width:40px;
+        height: 40px;
+    }
+    .navbar-header{
+        color:white;
+        padding:10px;
+        font-size:20px;
+    }
+    .SubHeader{
+        padding:10px;
+    }
+    .nav-pills > li{
+        padding:0px;
+    }
+    .nav-pills > .active > a{
+        background-color: white !important;
+        color:black !important;
+        font-weight: bold;
+        border-bottom: 2px solid deeppink;
+    }
+    .card {
+        background: #fff;
+        border-radius: 2px;
+        display: inline-block;
+        margin: 1rem;
+        margin-top:0px;
+        margin-left:0px;
+        position: relative;
+        width:100%;
+        min-height:40px;
+    }
+    .customers > .table > thead > tr > th{
+        font-size:13px;
+    }
+    .customers > .table > tbody{
+        display: block;   
+        max-height: 200px;
+        overflow-y: auto;
+    }
+    .customers > .table > thead, .customers > .table > tbody tr {
+        display:table;
+        width:100%;
+        table-layout:fixed;/* even columns width , fix width of table too*/
+    }
+    .customers > .table > thead {
+        width: calc( 100% - 1em )/* scrollbar is average 1em/16px width, remove it from thead width */
+    }
+    .customers > .table > tbody > tr > td{
+        font-size:12px;
+    }
+    .customers > .table > tbody > tr > td > .ProfileLink{
+        text-decoration: none;
+        color:blue;
+    }
+    .customer_Percentage{
+        font-weight: bold;
+        font-size:18px;
+        color:darkred;
+    }
+    .Profile{
+        padding:0px;
+    }
+    .fa-quote-right{
+        font-size: 20px;
+    }
+    .comment_msg{
+        padding-left:2px;
+        padding-right:2px;
+    }
+    .Message{
+        padding:0px;
+    }
+    .Message, .created{
+        color:grey;
+    }
+    .created{
+        font-size:12px;
+    }
+    .created > .createddate {
+        padding:0px;
+        padding-top:5px;
+    }
+    .posts >.card-2{
+        padding-top:10px;
+    }
+    .submodule{
+        padding:5px;
+    }
+    .card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+
+    .card-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    }
+    .card-2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    .card-3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    .panel-heading{
+        min-height: 50px;
+        padding:15px;
+    }
+    .panel-heading > div > a{
+        color:grey;
+        font-size:12px;
+        text-decoration: none;
+    }
+    .panel-heading > .selected > a{
+        color: black;
+        font-weight:bold;
+    }
+    .footer{
+        background-color:#424242;
+        margin:0px;
+        width:100%;
+        min-height: 100px;
+        padding-top:30px;
+        padding-left:0px;
+        color:white;
+    }
+    .footermenu > ul{
+        width:100%;
+        padding:0px;
+        padding-top:5px;
+    }
+    .footermenu > ul > li{
+        text-decoration: none;
+        padding-left:10px;
+        padding-right:10px;
+        font-size:12px;
+        display:inline;
+    }
+    .footermenu > ul > li > a{
+        font-size:12px;
+        color:white;
+    }
+    .footermenu{
+        padding-top:10px;
+    }
+    .footermenu > ul > .seperatemenu{
+        padding-bottom:15px;
+    }
+    .body_content{
+        min-height: 85vh;
+        padding: 10px;
+    }
+    .err_body_content{
+        min-height: 85vh;
+        padding-top:50px;
+    }
+    .panel-body > .row {
+        padding-top:5px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+.dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.ErrorMessage{
+	font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 40px;
+}
+.back{
+    padding:30px;
+}
+.card > hr{
+margin-top:2px;
+margin-bottom:2px;
+}
+.sub a{
+	color:#fff;
+	background:#272727;
+	text-decoration:none;
+	padding:10px 20px;
+	font-size:13px;
+	font-family: arial, serif;
+	font-weight:bold;
+	-webkit-border-radius:.5em;
+	-moz-border-radius:.5em;
+	-border-radius:.5em;
+}	
+
+#printoutHeading{
+    padding-top:20px;
+    background-color: lightyellow;
+}
+.printheader{
+    
+}
+.printoutSubHeading{
+    text-align:center;
+    font-weight: bold;
+    border-bottom:1px solid grey;
+}
+.printtable{
+    font-size:12px;
+}
+.nopadding{
+    padding:0px;
+}
+.closepreview{
+    padding-right:50px;
+}
+#seperateElement{
+    padding-top:20px;
+}
+
+

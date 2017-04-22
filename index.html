@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html ng-app="dashboard_app">
+	<head>
+		<meta charset="utf-8">	    
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Seller Zone</title>
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+        <link rel="stylesheet" href="libs/css/jquery-ui.css">
+        <link rel="stylesheet" href="libs/css/font-awesome.min.css">
+        <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+        .seperateElement{
+            padding-top:20px;
+        }
+        .classcontainer{
+            padding-top:50px;
+            padding-left:30px;
+            padding-right:30px;
+        }
+        </style>
+
+	</head>
+	<body ng-controller="dashboard_controller" id="dashboardController">		
+        <div class="header">
+            <a href="#" class="nav-trigger"><span></span></a>
+			<span class="search"><i class="fa fa-search"></i><input type="search" class="search-box" placeholder="Search Here"></span>
+            <span class="notify"><i class="fa fa-bell"></i></span>
+            <span class="profile"><img src="assets/img/dp1.jpg" class="photo"/><h3 class="photo-name">Welcome Vilva</h3><i class="fa fa-sort-down"></i></span>
+            <span></span>
+			
+		</div>
+		
+        <div class="side-nav">
+			<div class="logo">
+				<img src="assets/img/logo.png" class="logo-img" align="center">
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#" class="current">
+							<span><i class="fa fa-tachometer"></i></span>
+							<span>DASHBOARD</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span><i class="fa fa-suitcase"></i></span>
+							<span>CATALOGS</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span><i class="fa fa-credit-card"></i></span>
+							<span>PAYMENTS</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span><i class="fa fa-files-o"></i></span>
+							<span>ORDERS</span>
+						</a>
+					</li>
+                    <li>
+						<a href="#">
+							<span><i class="fa fa-arrow-circle-o-left"></i></span>
+							<span>RETURNS</span>
+						</a>
+					</li>
+                    <li>
+						<a href="#">
+							<span><i class="fa fa-gears"></i></span>
+							<span>SETTINGS</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		
+        <div class="main-content">
+
+            <div class="container-fluid" id="reviews">
+                <div class="row">
+                    
+                    <div class="col-sm-2">
+                        <div align="center" class="reviews-item">
+                            <h3 align="left" class="white">12</h3>
+                            <p align="left">PENDING ACTIONS <span><i class="fa fa-caret-right"></i></span></p>
+                        </div>
+                    </div>                    
+                     <div class="col-sm-2">
+                        <div align="center" class="reviews-item">
+                            <h3 align="left" class="white">31</h3>
+                            <p align="left">PENDING SHIPMENTS <span><i class="fa fa-caret-right"></i></span></p>
+                        </div>
+                    </div>   
+                     <div class="col-sm-2">
+                        <div align="center" class="reviews-item">
+                            <h3 align="left" class="white">148</h3>
+                            <p align="left">PENDING SLA BREACH <span><i class="fa fa-caret-right"></i></span></p>
+                        </div>
+                    </div>   
+                     <div class="col-sm-3">
+                        <div align="center" class="reviews-item">
+                            <p align="left" class="grey">Your overall rating</p>
+                            <h3 align="left" class="white">4.1<span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star" style="color: white;"></i></span></h3>
+                        </div>
+                    </div>   
+                     <div class="col-sm-2">
+                        <div align="center" class="reviews-item">
+                            <h3 align="left" class="blue"> .  </h3>
+                            <p align="left">230 REVIEWS <span><i class="fa fa-caret-right"></i></span></p>
+                        </div>
+                    </div>   
+
+                </div>
+            </div>
+
+            <div class="container-fluid" id="summary">
+                <div class="row">
+                    
+                    <div class="col-sm-4">
+                        <div align="center">
+                            <h4 align="left"><strong>Overall Summary</strong></h4>                            
+                        </div>
+                    </div>                    
+                     <div class="col-sm-4">
+                        <div align="center" ng-init="month='select'">
+                            <h4>Sort By: <a href="#" ng-click="sortByList='Week';week='select';month='';"><span class="sort {{week}}">Week</span></a><a ng-click="sortByList='Week';selectedSort='';week='';month='select';" href="#"><span class="sort {{month}}">Month</span></a></h4>                           
+                        </div>
+                    </div>   
+                     <div class="col-sm-4">
+                        <div align="center">
+                            <span class="sort" ><input name="startDate" ng-model="StartDate" id="startDate" class="date-picker" placeholder="DD/MM/YY"/></span> To <span class="sort"><input  name="endDate" id="endDate" class="date-picker" placeholder="DD/MM/YY"/></span>
+                        </div>
+                    </div>   
+
+                </div>
+            </div>
+            
+               <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-sm-2">
+                        <div align="center" class="summary-item">
+                            <h5 align="left" class="">GMV</h5>
+                            <h4 align="left" class="">7,50,420</h4>
+                            <p align="left"><span><i class="fa fa-caret-up"></i> 5.6%</span></p>
+                        </div>
+                    </div>                    
+                    <div class="col-sm-2">
+                        <div align="center" class="summary-item">
+                            <h5 align="left" class="">Total Item Sold</h5>
+                            <h4 align="left" class="">6,504</h4>
+                            <p align="left"><span><i class="fa fa-caret-up"></i> 5.6%</span></p>
+                        </div>
+                    </div>   
+                    <div class="col-sm-2">
+                        <div align="center" class="summary-item">
+                            <h5 align="left" class="">Seller Cancellations</h5>
+                            <h4 align="left" class="">43</h4>
+                            <p align="left"><span><i class="fa fa-caret-up"></i> 5.6%</span></p>
+                        </div>
+                    </div>   
+                    <div class="col-sm-2">
+                        <div align="center" class="summary-item">
+                            <h5 align="left" class="">User Cancellations</h5>
+                            <h4 align="left" class="">7,50,420</h4>
+                            <p align="left"><span><i class="fa fa-caret-up"></i> 5.6%</span></p>
+                        </div>
+                    </div>   
+                    <div class="col-sm-2">
+                        <div align="center" class="summary-item">
+                            <h5 align="left" class="">Shipment SLA & Breach</h5>
+                            <h4 align="left" class="">7,50,420</h4>
+                            <p align="left"><span><i class="fa fa-caret-up"></i> 5.6%</span></p>
+                        </div>
+                    </div>   
+                    <div class="col-sm-2">
+                        <div align="center" class="summary-item">
+                            <h5 align="left" class="">Out of Stock Index</h5>
+                            <h4 align="left" class="">7,50,420</h4>
+                            <p align="left"><span><i class="fa fa-caret-up"></i> 5.6%</span></p>
+                        </div>
+                    </div>   
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-xs-12 seperateElement chartproperties" ng-show="fetchedData.length">
+                <div class="card card-2 printtable classcontainer">
+                    <div class="text-right col-sm-12 col-md-12 col-xs-12" style="padding:30px;">
+                        <select class="pull-right form-control" style="width:200px; border:2px solid #b1d0ed;" ng-init="FirstSort='default';" ng-change="changeFirst(FirstSort);" ng-model="FirstSort">
+                            <option value="default">Select</option>
+                            <option ng-repeat="sortmenus in fetchedData[0].Sortoption"  ng-value="{{sortmenus}}">{{sortmenus.name}}</option>
+                        </select>
+                        <select class="pull-right form-control" style="width:200px;border:2px solid #e0e0e0;" ng-init="SecondSort='default';" ng-change="changeSecond(SecondSort);" ng-model="SecondSort">
+                            <option value="default">Select</option>
+                            <option ng-repeat="sortmenus in fetchedData[1].Sortoption"  ng-value="{{sortmenus}}">{{sortmenus.name}}</option>
+                        </select>
+                        <select class="pull-right form-control" style="width:200px;border:2px solid #ef4a73;" ng-init="ThirdSort='default';" ng-change="changeThird(ThirdSort);" ng-model="ThirdSort">
+                            <option value="default">Select</option>
+                            <option ng-repeat="sortmenus in fetchedData[2].Sortoption" ng-value="{{sortmenus}}">{{sortmenus.name}}</option>
+                        </select>
+                    </div>
+                    <canvas id="line" class="chart chart-line" chart-data="data"
+                    chart-labels="labels" chart-series="series" chart-options="options"
+                    chart-dataset-override="datasetOverride" chart-click="onClick" height="100px">
+                    </canvas>
+                </div>
+            </div>
+		</div>
+
+        <script src="libs/js/jquery-3.2.1.min.js"></script>    
+        <script src="js/main.js"></script>
+        <script src="libs/js/jquery.js"></script> 
+        <script src="libs/js/jquery-ui.min.js"></script> 
+        <script src="libs/js/angular.min.js"></script>    
+        <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+        <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+        
+        <script>
+            $(function() {
+                $('.date-picker').datepicker( {
+                    
+                    changeMonth: true,
+                    changeYear: true,
+                    showButtonPanel: true,
+                    dateFormat: 'dd MM yy',
+                    onClose: function(dateText, inst) { 
+                        if(this.id=="startDate"){
+                            angular.element($('body')).scope().updateStartDate(dateText);
+                        }
+                        else{
+                            windowEndDate=dateText;
+                            angular.element($('body')).scope().updateEndDate(dateText);
+                        }
+                        angular.element($('body')).scope().$apply();
+                        // $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+                    }
+                });
+            });
+        </script>
+        <script src="js/controllers/app_controller.js"></script>    
+	</body>
+</html>
